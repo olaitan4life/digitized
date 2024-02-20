@@ -13,8 +13,9 @@ const App = () => {
 
   return (
     <div className="mx-auto">
-      {clickedButton === "object" && <Nav />}
-      {clickedButton === "space" && <NavB />}
+      <Nav />
+      {/* {clickedButton === "object" && <Nav />} */}
+      {/* {clickedButton === "space" && <NavB />} */}
 
       <div className="flex justify-center gap-10 w[50%] ">
         <LeftSide clicked={clicked} />
