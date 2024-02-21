@@ -24,11 +24,11 @@ const RightSide = () => {
             Building
           </button>
           <button className="p-2 w-20 mx-5 shadow rounded border">Truck</button>
-          <button className="p-2 w-20 mx-5 shadow rounded border">
+          <button className="p-2 w-35 mx-5 shadow rounded border">
             Electric Pole
           </button>
           <br />
-          <button className="p-1 shadow-xl w-20 mx-5 rounded border">
+          <button className="p-1 shadow-xl w-20 mx-5 rounded border mt-5">
             Land
           </button>
           {/* <Button text="Car" />

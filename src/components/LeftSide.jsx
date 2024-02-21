@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "./shared/Button";
-import image from "./Access/images.jpg";
-import car from "./Access/car.jpg";
+import triangle2 from "./Access/triangle2.jpg";
+import triangle from "./Access/triangle.jpg";
 import Digitized from "./Digitized";
 // import { useState } from "react";
 
 const LeftSide = (props) => {
-  const [clickedButton, setClickedButton] = useState("");
+  const [clickedButton, setClickedButton] = useState("object");
   const clickObject = (e) => {
     e.preventDefault();
     setClickedButton("object");
@@ -18,6 +18,12 @@ const LeftSide = (props) => {
     setClickedButton("space");
     props.clicked("space");
   };
+
+  useEffect(() => {
+    props.clicked("object");
+  }, []);
+
+  console.log(clickedButton);
   return (
     <div className="">
       <div>
@@ -48,7 +54,7 @@ const LeftSide = (props) => {
             world<br></br> things you own on the<br></br> spaceweb
             <img
               className="w-40  rounded-2xl mr-5"
-              src={clickedButton === "space" ? car : image}
+              src={clickedButton === "space" ? triangle2 : triangle}
               alt=""
             />
           </p>

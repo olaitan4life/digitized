@@ -1,5 +1,4 @@
 import React from "react";
-import map from "./Access/map.jpg";
 
 const RightB = () => {
   return (

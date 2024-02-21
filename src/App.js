@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
 import NavB from "./components/NavB";
 import RightB from "./components/RightB";
+import Digitized from "./components/Digitized";
+import DigitizedObject from "./components/DigitizedObject";
 
 const App = () => {
   const [clickedButton, setClickedButton] = useState("");
@@ -14,6 +16,7 @@ const App = () => {
   return (
     <div className="mx-auto">
       <Nav />
+      {clickedButton === "space" && <NavB />}
       {/* {clickedButton === "object" && <Nav />} */}
       {/* {clickedButton === "space" && <NavB />} */}
 
